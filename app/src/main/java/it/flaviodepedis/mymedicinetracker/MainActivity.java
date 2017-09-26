@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Fa la stessa cosa del Log.i dentro il ciclo while
+            // Stampa tutto il contenuto del cursore
             // DatabaseUtils.dumpCursor(medicineCursor);
 
         } finally {
