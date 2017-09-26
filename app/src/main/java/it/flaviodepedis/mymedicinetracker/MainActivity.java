@@ -20,14 +20,6 @@ public class MainActivity extends AppCompatActivity {
         /** Define an instance of DBHelper class */
         MedicineDBHelper mDbHelper = new MedicineDBHelper(this);
 
-        /*
-        name
-        type
-        quantity
-        exp_date
-        note
-        */
-
         /** Insert dummy records to test - 1 */
         mDbHelper.insertMedicine(
                 "Tachipirina",
