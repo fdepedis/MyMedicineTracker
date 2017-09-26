@@ -36,8 +36,8 @@ public class MedicineDBHelper extends SQLiteOpenHelper {
                 + MedicineEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + MedicineEntry.COLUMN_MED_NAME + " TEXT NOT NULL, "
                 + MedicineEntry.COLUMN_MED_TYPE + " TEXT, "
-                + MedicineEntry.COLUMN_MED_QUANTITY + " INTEGER NOT NULL, "
-                + MedicineEntry.COLUMN_MED_EXP_DATE + " TEXT,"
+                + MedicineEntry.COLUMN_MED_QUANTITY + " INTEGER, "
+                + MedicineEntry.COLUMN_MED_EXP_DATE + " TEXT NOT NULL,"
                 + MedicineEntry.COLUMN_MED_NOTE + " TEXT);";
 
         // Execute the SQL statement
@@ -53,7 +53,7 @@ public class MedicineDBHelper extends SQLiteOpenHelper {
      * This method inserts records in the Medicine table
      *
      */
-    public void insertMedicine(String name, String type, String quantity, String exp_date, String note) {
+    public void insertMedicine(String name, String type, int quantity, String exp_date, String note) {
 
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
