@@ -1,6 +1,7 @@
 package it.flaviodepedis.mymedicinetracker;
 
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -58,6 +59,10 @@ public class MainActivity extends AppCompatActivity {
                         + "Med Expiry Date: " + medicineCursor.getString(3) + "\n"
                         + "Med Note: " + medicineCursor.getString(4) + "\n" );
             }
+
+            // Fa la stessa cosa del Log.i dentro il ciclo while
+            // DatabaseUtils.dumpCursor(medicineCursor);
+
         } finally {
             medicineCursor.close();
         }
