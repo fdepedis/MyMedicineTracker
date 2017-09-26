@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import it.flaviodepedis.mymedicinetracker.data.MedicineContract.*;
 
@@ -13,7 +14,6 @@ import it.flaviodepedis.mymedicinetracker.data.MedicineContract.*;
  */
 
 public class MedicineDBHelper extends SQLiteOpenHelper {
-
 
     public static final String LOG_TAG = MedicineDBHelper.class.getSimpleName();
 
@@ -55,6 +55,8 @@ public class MedicineDBHelper extends SQLiteOpenHelper {
      */
     public void insertMedicine(String name, String type, int quantity, String exp_date, String note) {
 
+        Log.i(LOG_TAG, "Method - insertMedicine()");
+
         SQLiteDatabase sqLiteDatabase = getWritableDatabase();
 
         // Create a ContentValues object where column names are the keys,
@@ -74,6 +76,8 @@ public class MedicineDBHelper extends SQLiteOpenHelper {
      *
      */
     public Cursor queryMedicine() {
+
+        Log.i(LOG_TAG, "Method - queryMedicine()");
 
         SQLiteDatabase sqLiteDatabase = getReadableDatabase();
 

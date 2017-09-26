@@ -16,7 +16,6 @@ public class MedicineContract {
 
     public static final class MedicineEntry implements BaseColumns {
 
-
         /** Name of database table for medicines */
         public static final String TABLE_NAME = "medicines";
 
@@ -42,6 +41,5 @@ public class MedicineContract {
             }
             return false;
         }
-
     }
 }
