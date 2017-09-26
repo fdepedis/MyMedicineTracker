@@ -12,10 +12,10 @@ import it.flaviodepedis.mymedicinetracker.data.MedicineContract.*;
  * Created by flavio.depedis on 26/09/2017.
  */
 
-public class MedicineDbHelper extends SQLiteOpenHelper {
+public class MedicineDBHelper extends SQLiteOpenHelper {
 
 
-    public static final String LOG_TAG = MedicineDbHelper.class.getSimpleName();
+    public static final String LOG_TAG = MedicineDBHelper.class.getSimpleName();
 
     /** Name of the database file */
     private static final String DATABASE_NAME = "medicine.db";
@@ -25,7 +25,7 @@ public class MedicineDbHelper extends SQLiteOpenHelper {
      */
     private static final int DATABASE_VERSION = 1;
 
-    public MedicineDbHelper(Context context) {
+    public MedicineDBHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
