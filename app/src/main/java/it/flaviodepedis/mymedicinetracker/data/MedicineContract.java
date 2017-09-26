@@ -25,7 +25,7 @@ public class MedicineContract {
         public static final String COLUMN_MED_NAME ="med_name";                     // Type: TEXT
         public static final String COLUMN_MED_TYPE = "med_type";                    // Type: TEXT
         public static final String COLUMN_MED_QUANTITY = "med_qty";                 // Type: INTEGER
-        public static final String COLUMN_MED_EXPIRY_DATE = "med_expiry_date";      // Type: TEXT
+        public static final String COLUMN_MED_EXP_DATE = "med_expiry_date";      // Type: TEXT
         public static final String COLUMN_MED_NOTE = "med_note";                    // Type: TEXT
 
         /** Name of constants for medicines */
